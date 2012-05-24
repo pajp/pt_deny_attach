@@ -34,10 +34,10 @@
  *
  * http://packetstorm.foofus.com/papers/attack/osx1061sysent.txt
  */
-#define _NSYSENT_OSX_10_7_1_  0xffffff8000846eb8
+#define _NSYSENT_OSX_10_7_4_  0xffffff8000846ed8
 
 static struct sysent *_sysent;
-static int *_nsysent = (int *)_NSYSENT_OSX_10_7_1_;
+static int *_nsysent = (int *)_NSYSENT_OSX_10_7_4_;
 
 typedef int	ptrace_func_t (struct proc *, struct ptrace_args *, int *);
 static ptrace_func_t *real_ptrace;
